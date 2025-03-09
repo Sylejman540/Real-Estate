@@ -1,0 +1,96 @@
+/* .nav-text a::before{
+    content: "";
+    background-color: black;
+    width: 40px;
+    height: 3px;
+    position: absolute;
+    top: 40px;
+    margin-top: 2px;
+} */
+
+.banner{
+    /* text-align: start; */
+    align-items: center;
+    justify-content: center;
+    line-height: 2;
+}
+
+.wrapper{
+    background-color:#FEF7F2 ;
+}
+
+.banner h1{
+    color:#2B1B12;
+}
+
+.dream{
+    align-items: center;
+}
+
+p{
+    color: #4F3527;
+}
+
+.border{
+    background-color: #DDC7BB;
+    border:none;
+    padding: 40px 20px;
+    border-radius: 30px;
+}
+
+.background{
+    background-color: #DDC7BB;
+    border-radius: 10px;
+}
+
+.feedback{
+    background-color: #FEF7F2;
+}
+
+.contact span{
+    color:  #4F3527;
+}
+
+.input{
+    background-color: #DDC7BB;
+}
+
+.image{
+    background-color: #FBF5F1;
+    border-radius: 15px;
+}
+
+
+.submit{
+    background-color: #2B1B12;
+}
+
+.sell button{
+    background-color: #2B1B12;
+}
+
+.sell span{
+    color: #2B1B12;
+}
+
+.house{
+    background-color: #DDC7BB;
+    border-radius: 5px;
+    padding-bottom: 15px;
+}
+
+.end{
+    background-color: #DDC7BB;
+}
+
+.end a{
+    color: #4F3527;
+}
+
+.input1{ 
+    background-color: #DDC7BB;
+}
+
+.input2{
+    background-color: #FBF5F1;
+}

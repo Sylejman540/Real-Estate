@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Nav & Banner Wrapper -->
+    <div class="wrapper">
+      <!-- Navigation Section -->
+      <div class="flex justify-around p-3 nav-bar">
+        <!-- Logo -->
+        <div class="font-bold text-2xl">
+          <img src="images/logo (1).png" alt="Dwello" />
+        </div>
+
+        <svg class="md:hidden flex w-8 text-center " id="burger" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        <!-- Navigation Links -->
+         <!-- "md:flex gap-20 mt-2 nav-text font-bold hidden"-->
+        <nav>
+          <ul class="md:flex gap-20 mt-2 nav-text font-bold hidden">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Agents</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- Icons & Sign In Button -->
+        <span class="flex mt-2 font-bold">
+          <svg
+            class="w-6 mr-5 cursor-pointer"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+            />
+          </svg>
+          <svg
+            class="w-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+            />
+          </svg>
+          <span class="border-2 rounded-full text-white bg-black px-5 ml-5 cursor-pointer">
+            Sign In
+          </span>
+        </span>
+      </div>
+
+      <!-- For Mobile -->
+      <nav>
+        <ul class="md:hidden  mt-2 nav-text font-bold flex justify-around mb-10" id="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Agents</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Banner Section -->
+      <div class="banner md:flex grid md:justify-around text-center md:text-start gap-10 md:mt-0 mt-10">
+        <div>
+          <h1 class="font-bold text-6xl mb-5">
+            Find Your<br />Dream Home
+          </h1>
+          <p class="mb-15 mt-15 font-semibold">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br />
+            Dolore odio illum natus atque quidem impedit eos ad dolor<br />
+            necessitatibus cum consectetur nemo harum<br />
+            nulla voluptatem assumenda, ab recusandae quae saepe?
+          </p>
+          <span class="shadow-xl rounded text-white bg-black px-10  py-2 cursor-pointer">
+            Sign In
+          </span>
+        </div>
+        <img src="images/hero image 1.png" alt="House" class="md:h-208" />
+      </div>
+    </div>
+
+    <!-- Used Absolute Position -->
+   
+    
+    <div class="md:flex justify-center gap-10 input1 py-10 absolute top-195 md:top-200 md:left-60 left-12 px-10 grid text-center">
+      <div class="input2 flex justify-evenly shadow-xl px-4 rounded">
+      <input type="text" name="name" id="name" placeholder="Location">
+      <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+      </svg>
+      </div>
+
+      <div class="input2 flex justify-evenly px-4 rounded shadow-xl">
+        <input  type="text" name="name" id="name" placeholder="Type">
+        <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+        </svg>
+        
+      </div>
+
+      <div class="input2 flex justify-evenly px-4 rounded shadow-xl">
+          <input type="text" name="name" id="name" placeholder="Price Range">
+          <svg class="w-6"xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+          </svg>
+          
+      </div>
+
+      <span class="shadow-xl rounded text-white bg-black px-10  py-2 cursor-pointer">
+        Sign In
+      </span>
+    </div>
+       
+
+
+
+    <!-- Dream House Section -->
+    <div class="md:flex grid md:justify-evenly text-center dream">
+      <img
+        src="images/luxury_and_rich_home_exterior_side_view.png"
+        alt="Luxury Home"
+        class="rounded mt-30"
+      />
+      <div>
+        <h1 class="text-4xl font-bold mb-10 mt-5 md:mt-15">
+          We Help You To Find <br /> Your Dream Home
+        </h1>
+        <p class="font-semibold mb-10 text-md">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br />
+          Dolore odio illum natus atque quidem impedit eos ad dolor<br />
+          necessitatibus cum consectetur nemo harum<br />
+          nulla voluptatem assumenda, ab recusandae quae saepe?
+        </p>
+        <!-- Statistics -->
+        <div class="flex gap-14 text-center justify-start">
+          <div>
+            <h2 class="uppercase font-bold text-4xl">8K+</h2>
+            <span>Houses Available</span>
+          </div>
+          <div>
+            <h2 class="uppercase font-bold text-4xl">6K+</h2>
+            <span>Houses Sold</span>
+          </div>
+          <div>
+            <h2 class="uppercase font-bold text-4xl">2K+</h2>
+            <span>Trusted Agents</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Why Choose Us Section -->
+    <div class="text-center mt-30">
+      <h2 class="font-bold text-4xl flex justify-center ml-10 mb-10">
+        Why Choose Us
+      </h2>
+      <p class="font-bold mb-15">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br />
+        Dolore dignissimos eos id voluptatem est qui eligendi rem illum
+        voluptates necessitatibus velit<br />
+      </p>
+    </div>
+
+    <!-- Feature Cards -->
+    <div class="md:flex grid justify-evenly mt-10">
+      <div class="text-start border shadow-xl mb-10">
+    <div class="ml-3 mr-3">
+        <img
+          src="images/Vector (22).svg"
+          alt="Location"
+          class="image h-20 p-3"
+        />
+        <h2 class="font-bold mt-2 mb-2">Expert Guidance</h2>
+        <p class="font-semibold">
+          Lorem ipsum dolor sit amet<br> consectetur.
+          totam tempore ex<br> explicabo, ipsam adipisci,
+          <br>corporis dolorem earum quo.
+        </p>
+      </div>
+    </div>
+
+      <div class="text-start border shadow-xl mb-10">
+      <div class="ml-3 mr-3">
+        <img
+          src="images/Vector (23).svg"
+          alt="Location"
+          class="image h-20 p-3 "
+        />
+        <h2 class="font-bold mt-2 mb-2">Expert Guidance</h2>
+        <p class="font-semibold">
+          Lorem ipsum dolor sit amet<br> consectetur.
+          totam tempore ex<br> explicabo, ipsam adipisci,
+          <br>corporis dolorem earum quo.
+        </p>
+      </div>
+      </div>
+
+      <div class="text-start border shadow-xl mb-10">
+      <div class="ml-3 mr-3">
+        <img
+          src="images/Vector (24).svg"
+          alt="Location"
+          class="image h-20 p-3"
+        />
+        <h2 class="font-bold mt-2 mb-2">Expert Guidance</h2>
+        <p class="font-semibold">
+          Lorem ipsum dolor sit amet<br> consectetur.
+          totam tempore ex<br> explicabo, ipsam adipisci,
+          <br>corporis dolorem earum quo.
+        </p>
+      </div>
+      </div>
+
+      <div class="text-start border shadow-xl mb-10">
+        <div class="ml-3 mr-3">
+        <img
+          src="images/Vector (25).svg"
+          alt="Location"
+          class="image h-20 p-3"
+        />
+        <h2 class="font-bold mt-2 mb-2">Expert Guidance</h2>
+        <p class="font-semibold">
+          Lorem ipsum dolor sit amet<br> consectetur.
+          totam tempore ex<br> explicabo, ipsam adipisci,
+          <br>corporis dolorem earum quo.
+        </p>
+      </div>
+      </div>
+    </div>
+
+    <!-- Popular Residences Section -->
+
+    <h2 class="text-center text-4xl mt-30 mb-5 font-bold">Our Popular Residences</h2>
+    <div class="md:flex grid justify-evenly mt-10 sell">
+      <div class="grid house shadow-xl mb-10">
+        <img src="images/image (21) 2.png" alt="Luxury Home" class="rounded" />
+        <div class="flex font-bold mt-4 justify-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+            />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+            />
+          </svg>
+          <span>San Franciso, California</span>
+        </div>
+
+        <div class="flex mt-5 justify-around">
+          <div class="flex">
+            <img src="images/rooms.svg" alt="Bed" />
+            <span>4 Rooms</span>
+          </div>
+          <div class="flex">
+            <img src="images/size.svg" alt="Size" />
+            <span>3.500 sq ft</span>
+          </div>
+        </div>
+
+        <div class="flex mt-5 justify-around">
+          <button class="shadow-xl rounded text-white bg-black px-5 py-1 cursor-pointer"
+          >
+            Sign In
+          </button>
+          <span class="font-bold text-xl">$2,500,000</span>
+        </div>
+      </div>
+
+      <div class="grid house shadow-xl mb-10">
+        <img src="images/image (10) 2.png" alt="Luxury Home" class="rounded" />
+        <div class="flex font-bold mt-4 justify-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+            />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+            />
+          </svg>
+          <span class="font-bold">Beverly Hills, California</span>
+        </div>
+
+        <div class="flex mt-5 justify-around">
+          <div class="flex">
+            <img src="images/rooms.svg" alt="Bed" />
+            <span>3 Rooms</span>
+          </div>
+          <div class="flex">
+            <img src="images/size.svg" alt="Size" />
+            <span>1.500 sq ft</span>
+          </div>
+        </div>
+
+        <div class="flex mt-5 justify-around">
+          <button class="shadow-xl rounded text-white bg-black px-5 py-1 cursor-pointer"
+          >
+            Sign In
+          </button>
+          <span class="font-bold text-xl">$850,000</span>
+        </div>
+      </div>
+
+      <div class="grid house shadow-xl mb-10">
+        <img src="images/image 2.png" alt="Luxury Home" class="rounded" />
+        <div class="flex font-bold mt-4 justify-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+            />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+            />
+          </svg>
+          <span>Palo Alto, California</span>
+        </div>
+
+        <div class="flex mt-5 justify-around">
+          <div class="flex">
+            <img src="images/rooms.svg" alt="Bed" />
+            <span>6 Rooms</span>
+          </div>
+          <div class="flex">
+            <img src="images/size.svg" alt="Size" />
+            <span>4.000 sq ft</span>
+          </div>
+        </div>
+
+        <div class="flex mt-5 justify-around">
+          <button class="shadow-xl rounded text-white bg-black px-5 py-1 cursor-pointer"
+          >
+            Sign In
+          </button>
+          <span class="font-bold text-xl">$3,700,000</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feedbacks Section -->
+    <div class="feedback py-5 mt-30">
+      <h2 class="font-bold text-4xl text-center mt-10 mb-10">
+        What People Say <br /> About Dwello
+      </h2>
+      <div class="md:flex grid justify-around mt-10 ">
+        <!-- Feedback Card 1 -->
+        <div class="background">
+          <img src="images/image (26).png" alt="Bedroom" class="rounded" />
+          <div class="ml-5 mr-5 grid ">
+            <div>
+              <div class="flex justify-around mt-5">
+                <img
+                  src="images/image (35) 1.png"
+                  alt="Girl"
+                  class="rounded-full"
+                />
+                <h2 class="font-bold text-xl ml-5">
+                  Sarah Ngyen <br />
+                  <span class="text-lg font-light">San Francisco</span>
+                </h2>
+                <div class="flex bg-white h-6 mt-5 w-18 rounded">
+                  <img
+                    src="images/Star 1.svg"
+                    alt="Star"
+                    class="w-6 h-5 ml-1"
+                  />
+                  <span class="ml-2 font-bold">5.0</span>
+                </div>
+              </div>
+              <p class="mt-5 font-bold mb-5">
+                Lorem ipsum dolor sit amet consectetur,<br />
+                adipisicing elit.Veritatis, nihil sunt iure<br />
+                soluta enim qui<br />
+                recusandae? Quasi nulla molestiae delectus<br />
+                voluptates, molestias, incidunt, consequatur<br />
+                dignissimosdistinctio<br />
+                ea repellendus quaerat eos!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feedback Card 2 -->
+        <div class="background">
+          <img src="images/image (24).png" alt="Bedroom" class="rounded" />
+          <div class="ml-5 mr-5">
+            <div class="flex justify-around mt-5">
+              <img
+                src="images/Mask group.png"
+                alt="Girl"
+                class="rounded-full"
+              />
+              <h2 class="font-bold text-xl ml-5">
+                Micael Rodriguez <br />
+                <span class="text-lg font-light">San Diego</span>
+              </h2>
+              <div class="flex bg-white h-6 mt-5 w-18 rounded">
+                <img
+                  src="images/Star 1.svg"
+                  alt="Star"
+                  class="w-6 h-5 ml-1"
+                />
+                <span class="ml-2 font-bold">4.5</span>
+              </div>
+            </div>
+            <p class="mt-5 font-bold mb-5">
+              Lorem ipsum dolor sit amet consectetur,<br />
+              adipisicing elit.Veritatis, nihil sunt iure<br />
+              soluta enim qui<br />
+              recusandae? Quasi nulla molestiae delectus<br />
+              voluptates, molestias, incidunt, consequatur<br />
+              dignissimosdistinctio<br />
+              ea repellendus quaerat eos!
+            </p>
+          </div>
+        </div>
+
+        <!-- Feedback Card 3 -->
+        <div class="background">
+          <img src="images/image (27).png" alt="Bedroom" class="rounded" />
+          <div class="ml-5 mr-5">
+            <div class="flex justify-around mt-5">
+              <img
+                src="images/image (31) 1.png"
+                alt="Girl"
+                class="rounded-full"
+              />
+              <h2 class="font-bold text-xl ml-5">
+                Emily Johnson <br />
+                <span class="text-lg font-light">Los Angelos</span>
+              </h2>
+              <div class="flex bg-white h-6 mt-5 w-18 rounded">
+                <img
+                  src="images/Star 1.svg"
+                  alt="Star"
+                  class="w-6 h-5 ml-1"
+                />
+                <span class="ml-2 font-bold">5.0</span>
+              </div>
+            </div>
+            <p class="mt-5 font-bold ">
+              Lorem ipsum dolor sit amet consectetur,<br />
+              adipisicing elit.Veritatis, nihil sunt iure<br />
+              soluta enim qui<br />
+              recusandae? Quasi nulla molestiae delectus<br />
+              voluptates, molestias, incidunt, consequatur<br />
+              dignissimosdistinctio<br />
+              ea repellendus quaerat eos!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feedback Navigation Arrows -->
+      <div class="flex justify-center gap-10 mt-10 cursor-pointer">
+        <img src="images/Group 18.png" alt="Left Arrow" />
+        <img src="images/Group 19.svg" alt="Right Arrow" />
+      </div>
+    </div>
+
+    
+    <!-- Contact -->
+  <div class="contact">
+    <h2 class="font-bold text-4xl mt-40 text-center">Do You Have Any Question? <br> Get Help From Us</h2>
+
+    <div class="md:flex grid justify-center gap-10 mt-10">
+      <div class="flex">
+      <img src="images/icons8-verified-account-96 1.png" alt="Tick">
+      <span class="ml-2 font-bold">Chat live with our support team</span>
+      </div>
+      
+      <div class="flex">
+      <img src="images/icons8-verified-account-96 1.png" alt="Tick">
+      <span class="ml-2 font-bold">Browser our FAQ</span>
+      </div>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="md:flex text-center grid justify-center gap-10 text-start mt-5 mb-15">
+    <input type="text" name="name" id="name" placeholder="Enter your email  address..." class="input rounded border-none shadow-xl py-2 px-20 font-bold">
+    <svg class="absolute hidden md:flex w-6 mr-100  mt-2"xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+    </svg>
+
+
+    <button class="border-none shadow-xl submit text-white rounded py-1 px-5 cursor-pointer mt-4 md:mt-0">Submit</button>
+    </div>
+  </div>
+
+  <!-- End -->
+
+  <div class="flex justify-around  end py-10">
+    <img src="images/logo (1).png" alt="Dwello" class="w-18 h-7 hidden md:block" />
+
+    <div class="grid">
+      <h2 class="font-bold mb-2 text-lg">About</h2>
+      <a href="#" class="font-semibold mb-2">Our Story</a>
+      <a href="#" class="font-semibold mb-2">Careers</a>
+      <a href="#" class="font-semibold mb-2">Our Team</a>
+      <a href="#" class="font-semibold mb-2">Resources</a>
+    </div>
+
+    <div class="grid">
+      <h2 class="font-bold mb-2 text-lg">Support</h2>
+      <a href="#" class="font-semibold mb-2">FAQ</a>
+      <a href="#" class="font-semibold mb-2">Contact Us</a>
+      <a href="#" class="font-semibold mb-2">Help Center</a>
+      <a href="#" class="font-semibold mb-2">Terms of Service</a>
+    </div>
+
+    <div class="grid">
+      <h2 class="font-bold mb-2 text-lg">Find Us</h2>
+      <a href="#" class="font-semibold mb-2">Events</a>
+      <a href="#" class="font-semibold mb-2">Locations</a>
+      <a href="#" class="font-semibold mb-2">Newsletter</a>
+    </div>
+
+    <div class="grid">
+      <h2 class="font-bold mb-2 text-lg">Our Social</h2>
+      <div class="flex">
+        <img src="images/Vector (2).png" alt="Instagram" class="h-6 mr-2">
+      <a href="#" class="font-semibold mb-2">Instagram</a>
+      </div>
+      
+      <div class="flex gap-2">
+        <img src="images/Vector (3).png" alt="Facebook" class="h-6 mr-2">
+      <a href="#" class="font-semibold mb-2">Facebook</a>
+      </div>
+
+      <div class="flex gap-2">
+        <img src="images/Vector (4).png" alt="Twitter" class="h-6 mr-2">
+      <a href="#"class="font-semibold mb-4">Twitter (X)</a>
+      </div>
+    </div>
+  </div>
+   
+  <script src="main.js"></script>
+  </body>
+</html>
